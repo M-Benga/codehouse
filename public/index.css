@@ -1,0 +1,115 @@
+.responsive-background {
+  width: 100%; /* Make the div responsive in width */
+  height: 100vh;
+  background-image: url('/assets/images/pexels-jplenio-1103970.webp'); /* Use your largest image as the default */
+  background-size: cover; /* Scale the image to cover the entire background */
+  background-position: center; /* Center the image within the div */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Example text color */
+  text-align: center; /* Example text alignment */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.brand {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.logo-img {
+  max-width: 20%; /* Ensures the image never exceeds its parent's width */
+  height: auto;    /* Maintains the aspect ratio */
+  padding-left: -4em;
+}
+
+figcaption {
+  font-size: 1.2vw; /* Start with a viewport unit for scaling */
+  margin-top: 4px; /* Adjust spacing as needed */
+  color: #003459; /* Example color */
+  /* Add other styles like font-weight, letter-spacing if desired */
+}
+
+
+.aboutContact {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  position: inherit;
+  top: 2%;
+  left: 45%;
+
+}
+
+a {
+  color: #08652C;
+  font-size: 1.5em;
+}
+a:hover {
+  color: green;
+}
+.wrapper {
+  margin-top: 100vh; 
+  display: flex; /* or grid */
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  top: 30%;
+}
+
+.about {
+  padding: 2em;
+  background-color: #10091D;
+  width: 100%;
+}
+.center-about {
+  align-content: auto;
+  padding-top: 2em;
+  padding-left: 20%;
+}
+.contact {
+  background-color: #2A3439;
+  width: 100%;
+  border-bottom: 1px solid #657383;
+  padding: 2em 0 2em 0;
+}
+.contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1.4em;
+}
+.btn:hover {
+  background-color: green;
+  border-color: green;
+}
+.footer {
+  background-color: black;
+  width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  figcaption {
+    font-size: 1.8vw; /* Slightly larger on smaller screens if 1.2vw becomes too small */
+    /* Or set a fixed smaller size if desired */
+    /* font-size: 14px; */
+  }
+}
+
+@media (max-width: 480px) {
+  figcaption {
+    font-size: 2.5vw; /* Even larger on very small screens, or a fixed size */
+    /* font-size: 12px; */
+    padding: 0 10px; /* Add some horizontal padding to prevent text from hugging edges */
+  }
+  .logo-img {
+    max-width: 35%;
+  }
+}
