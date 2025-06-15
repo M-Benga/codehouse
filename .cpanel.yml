@@ -1,0 +1,13 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home4/codehous/public_html/
+    
+    # Copy individual files
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index.css $DEPLOYPATH
+    - /bin/cp index.js $DEPLOYPATH
+    
+    # Copy entire directories (and their contents)
+    - /bin/cp -r assets $DEPLOYPATH
+    - /bin/cp -r favicons $DEPLOYPATH
+    - /bin/cp
